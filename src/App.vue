@@ -1,19 +1,14 @@
 <script setup lang="ts">
 import LeafletMap from './components/LeafletMap.vue'
-import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>
   <header>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <LeafletMap msg="You did it!" />
-    </div>
   </header>
 
   <main>
-    <TheWelcome />
+    <LeafletMap msg="You did it!" />
   </main>
 </template>
 
@@ -36,12 +31,6 @@ header {
 
   .logo {
     margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
   }
 }
 </style>

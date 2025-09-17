@@ -42,7 +42,7 @@ onMounted(() => {
 <template>
   <div class="leaflet-container">
     <h1>{{ msg }}</h1>
-    <div id="map" style="height: 90vh">The map here</div>
+    <div id="map">The map here</div>
   </div>
 </template>
 
@@ -50,14 +50,12 @@ onMounted(() => {
 h1 {
   font-weight: 500;
   font-size: 2.6rem;
-  position: relative;
-  top: -10px;
 }
 
+#map {
+  height: 90vh;
+  width: 60vw;
+}
 @media (min-width: 1024px) {
-  .greetings h1,
-  .greetings h3 {
-    text-align: left;
-  }
 }
 </style>
